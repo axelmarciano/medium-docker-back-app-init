@@ -5,11 +5,11 @@ const bodyParser = require("body-parser");
 
 //Connexion à la base de donnée
 mongoose
-  .connect("mongodb://localhost:27000/skeat")
+  .connect("mongodb://localhost:27000/database")
   .then(() => {
     console.log("Connected to mongoDB");
   })
-  .catch((e) => {
+  .catch(e => {
     console.log("Error while DB connecting");
     console.log(e);
   });
